@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header id="header">
+    <div class="nav">
+      <a class="brand" href="#home" aria-label="Go home">
+        <span class="brand-mark">P</span>
+        <span>Portfolio</span>
+      </a>
+
+      <nav id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#learning">Learning</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☾</button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <div class="eyebrow"><span class="pulse"></span> Available for new ideas</div>
+        <h1>
+          Creative Developer<br />
+          <span class="gradient-text bobbing-word">Portfolio</span>
+        </h1>
+        <p>
+          A sharp, modern space for projects, learning progress, and creative work. Built with clean design, interactive details, and smooth motion for a professional first impression.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects →</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+
+        <div class="glass-card profile-card tilt-card">
+          <div class="profile-top">
+            <div class="window-actions">
+              <span class="close">×</span>
+              <span class="minimize">−</span>
+              <span class="expand">□</span>
+            </div>
+            <strong class="window-title">Preview Window</strong>
+          </div>
+
+          <div class="browser-window">
+            <div class="browser-toolbar">
+              <span class="browser-dot"></span>
+              <div class="browser-address">portfolio.dev/home</div>
+            </div>
+            <div class="browser-content">
+              <h3>Design. Code. Create.</h3>
+              <p>Interactive portfolio experience with polished motion and clean project showcases.</p>
+              <div class="code-line long"></div>
+              <div class="code-line medium"></div>
+              <div class="code-line short"></div>
+            </div>
+          </div>
+
+          <h3>Your Name</h3>
+          <p>Developer, designer, learner, and builder of interactive web experiences.</p>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <div class="mouse"><div class="wheel"></div></div>
+        Scroll
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-heading reveal">
+        <h2>Selected Projects</h2>
+        <p>Filter the cards and hover over them. Replace these with your actual Java, JavaScript, HTML, and CSS projects.</p>
+      </div>
+
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal tilt-card" data-category="web">
+          <div class="project-preview"></div>
+          <h3>Interactive Portfolio</h3>
+          <p>A personal website with smooth animations, project cards, and a clean responsive layout.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="java">
+          <div class="project-preview"></div>
+          <h3>Java Grade Tracker</h3>
+          <p>A Java app concept that stores assignments, calculates averages, and organizes class progress.</p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Logic</span>
+            <span class="tag">OOP</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="web">
+          <div class="project-preview"></div>
+          <h3>Weather Dashboard</h3>
+          <p>A web dashboard idea that shows weather data with a simple search and animated cards.</p>
+          <div class="tags">
+            <span class="tag">API</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="design">
+          <div class="project-preview"></div>
+          <h3>App Interface Mockup</h3>
+          <p>A sleek layout for a mobile or web app, focused on spacing, typography, and visual hierarchy.</p>
+          <div class="tags">
+            <span class="tag">Design</span>
+            <span class="tag">UX</span>
+            <span class="tag">Layout</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="java">
+          <div class="project-preview"></div>
+          <h3>Console Game</h3>
+          <p>A Java-based game project with player input, scoring, loops, and clean program structure.</p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Game</span>
+            <span class="tag">Loops</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card" data-category="web">
+          <div class="project-preview"></div>
+          <h3>Task Manager</h3>
+          <p>A browser app concept with task creation, completion states, filtering, and local storage.</p>
+          <div class="tags">
+            <span class="tag">DOM</span>
+            <span class="tag">Storage</span>
+            <span class="tag">CSS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="learning">
+      <div class="section-heading reveal">
+        <h2>Learning</h2>
+        <p>A place to show what you are currently improving, what you have learned, and what you want to build next.</p>
+      </div>
+
+      <div class="learning-layout">
+        <div class="learning-panel reveal">
+          <h3>Current Skill Focus</h3>
+          <p>These animated bars fill when this section scrolls into view. You can change the names and percentages later.</p>
+
+          <div class="skill">
+            <div class="skill-top"><span>HTML / CSS</span><span>90%</span></div>
+            <div class="bar"><span data-width="90%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+            <div class="bar"><span data-width="75%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>Java</span><span>70%</span></div>
+            <div class="bar"><span data-width="70%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>UI Design</span><span>80%</span></div>
+            <div class="bar"><span data-width="80%"></span></div>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span>Now</span>
+            <div>
+              <h4>Building stronger frontend projects</h4>
+              <p>Practicing layouts, animations, responsive pages, and cleaner JavaScript.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span>Next</span>
+            <div>
+              <h4>Adding real project demos</h4>
+              <p>Connecting portfolio cards to live GitHub Pages demos and code repositories.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span>Goal</span>
+            <div>
+              <h4>Creating polished full projects</h4>
+              <p>Combining design, code, problem solving, and clear explanations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-heading reveal">
+        <h2>Contact</h2>
+        <p>Keep this professional and simple. You can link GitHub, email, LinkedIn, or a school-safe contact option.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <h3>Let’s connect</h3>
+          <p>Use this section to help people find your work or reach out about your projects.</p>
+          <a class="contact-link" href="mailto:your.email@example.com">Email <span>↗</span></a>
+          <a class="contact-link" href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <a class="contact-link" href="#projects">Projects <span>↗</span></a>
+        </div>
+
+        <form class="reveal" id="contactForm">
+          <h3>Send a message</h3>
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+          <button class="btn primary" type="submit">Send Preview Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name. Built with HTML, CSS, JavaScript, and Anime.js.</p>
+    <p>Designed for GitHub Pages.</p>
+  </footer>
+
+  <div class="toast" id="toast">Message preview saved. To make this actually send emails, connect it to a form service later.</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
